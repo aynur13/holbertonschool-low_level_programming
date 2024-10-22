@@ -1,22 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-/**
- * main - Entry point
- * Return: Always 0 (Success)
- */
+
 int main(void)
 {
-	char aynur = 'a';
+    char ch;
 
-	while (aynur <= 'z')
-	{
-		if (aynur != 'q' && aynur != 'e')
-		{
-			putchar(aynur);
-		}
-		aynur++;
-	}
-	putchar('\n');
-	return (0);
+    for (ch = 'a'; ch <= 'z'; ch++)
+    {
+        if (ch != 'e' && ch != 'q')
+        {
+            putchar(ch);
+        }
+    }
 
+    putchar('\n');  // Print a newline at the end
+    return 0;
+}
