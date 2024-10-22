@@ -3,18 +3,18 @@
 #include <time.h>
 
 /**
-* main - Entry point
-* Return: Always 0 (Success)
-*/
+ * main - Entry point
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 
 {
-	int num;
+	int a;
 
-	for (num = 0; a < 10 ; num++)
+	for (a = 48; a < 58 ; a++)
 	{
-		putchar(num + 0);
+		putchar(a);
 	}
 	putchar('\n');
 	return (0);
