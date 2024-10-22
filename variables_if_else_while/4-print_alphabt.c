@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>>
 
 int main(void)
 {
@@ -14,4 +16,4 @@ int main(void)
 
     putchar('\n');  // Print a newline at the end
     return 0;
-}
+
