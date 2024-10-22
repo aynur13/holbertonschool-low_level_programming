@@ -1,10 +1,6 @@
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
 
-void test_islower(void)
-{
-    int n = 'a';
-    int r;
+int _islower(int c);  // Declare your function here
 
-    r = _islower(n);
-    // Add some code to check the result
-}
+#endif /* MAIN_H */}
