@@ -4,6 +4,7 @@
 
 /**
  *main-char function
+ *Return: Always 0 (Success)
 */
 int main(void)
 {
