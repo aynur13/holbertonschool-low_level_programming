@@ -7,9 +7,9 @@ int main(void)
 
     for (num = 0; num < 10; num++)
     {
-        putchar(num + '0');  // Convert integer to character
+        putchar(num + '0');  
     }
 
-    putchar('\n');  // Print a newline
+    putchar('\n'); 
     return (0);
 }
