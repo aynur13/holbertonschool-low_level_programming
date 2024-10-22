@@ -1,8 +1,10 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
-void _putchar(char c);
-void print_alphabet(void);
-void print_alphabet_x10(void); /* Add this line */
+void test_islower(void)
+{
+    int n = 'a';
+    int r;
 
-#endif /* MAIN_H */
+    r = _islower(n);
+    // Add some code to check the result
+}
