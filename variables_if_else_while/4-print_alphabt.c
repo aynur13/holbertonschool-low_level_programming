@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+ *main-char function
+*/
 int main(void)
 {
 	char ch;
