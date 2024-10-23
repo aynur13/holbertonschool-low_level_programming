@@ -1,38 +1,42 @@
 #include "main.h"
 
 /**
-* times_table - prints the 9 times table
-*/
+ * times_table  - check the code
+ *
+ * Return: time table.
+ */
+
 void times_table(void)
 {
-    int i, j, product;
+	int i, j;
 
-    for (i = 0; i <= 9; i++)
-    {
-        for (j = 0; j <= 9; j++)
-        {
-            product = i * j;
-
-            if (j == 0)
-            {
-                /* Print the first number without leading space */
-                print(product);
-            }
-            else
-            {
-                /* Print a comma and space before the next number */
-                _putchar(',');
-                _putchar(' ');
-
-                /* Handle single-digit and double-digit numbers */
-                if (product < 10)
-                {
-                    _putchar(' '); /* Add space for alignment */
-                }
-                print(product);
-            }
-        }
-        /* Move to the next line after each row */
-        _putchar('$\n');
-    }
+	for (i = 0; i < 10; i++)
+	{
+		for (j = 0; j < 10; j++)
+		{
+			if (i * j < 10)
+			{
+				_putchar((i * j) % 10 + '0');
+			}
+			else
+			{
+				_putchar((i * j) / 10 + '0');
+				_putchar((i * j) % 10 + '0');
+			}
+			if (j != 9)
+			{
+				_putchar(',');
+				if (i * (j + 1) < 10)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar(' ');
+				}
+			}
+		}
+		_putchar('\n');
+	}
 }
