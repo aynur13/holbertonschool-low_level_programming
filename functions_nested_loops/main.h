@@ -1,7 +1,15 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include <stdio.h>
 
-int _islower(int c);  /* Declare your function here */
-int _putchar(char c);   /* Declare _putchar function here */
+// Function prototype
+int _isalpha(int c);
 
-#endif /* MAIN_H */
+void test_isalpha() {
+    int n = 'A'; // Example input
+    int r = _isalpha(n); // This should call your function
+    printf("Result: %d\n", r); // Example output
+}
+
+int main() {
+    test_isalpha();
+    return 0;
+}
