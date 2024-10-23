@@ -16,7 +16,7 @@ void times_table(void)
             if (j == 0)
             {
                 /* Print the first number without leading space */
-                _putchar(product + '0');
+                print(product);
             }
             else
             {
@@ -29,10 +29,10 @@ void times_table(void)
                 {
                     _putchar(' '); /* Add space for alignment */
                 }
-                _putchar(product + '0');
+                print(product);
             }
         }
         /* Move to the next line after each row */
-        _putchar('\n');
+        _putchar('$\n');
     }
 }
