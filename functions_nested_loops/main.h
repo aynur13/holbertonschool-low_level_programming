@@ -1,15 +1,9 @@
-#include <stdio.h>
+#ifndef MAIN_H
+#define MAIN_H
 
-// Function prototype
-int _isalpha(int c);
+int _putchar(char c); // Prototype for _putchar
+int _isalpha(int c); // Prototype for _isalpha
+void test_isalpha(); // Prototype for test_isalpha
+int main(); // Prototype for main
 
-void test_isalpha() {
-    int n = 'A'; // Example input
-    int r = _isalpha(n); // This should call your function
-    printf("Result: %d\n", r); // Example output
-}
-
-int main() {
-    test_isalpha();
-    return 0;
-}
+#endif
