@@ -15,24 +15,24 @@ void times_table(void)
 
             if (j == 0)
             {
-                // Print the first number without leading space
+                /* Print the first number without leading space */
                 _putchar(product + '0');
             }
             else
             {
-                // Print a comma and space before the next number
+                /* Print a comma and space before the next number */
                 _putchar(',');
                 _putchar(' ');
 
-                // Handle single-digit and double-digit numbers
+                /* Handle single-digit and double-digit numbers */
                 if (product < 10)
                 {
-                    _putchar(' '); // Add space for alignment
+                    _putchar(' '); /* Add space for alignment */
                 }
                 _putchar(product + '0');
             }
         }
-        // Move to the next line after each row
+        /* Move to the next line after each row */
         _putchar('\n');
     }
 }
