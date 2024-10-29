@@ -2,6 +2,6 @@
 #define MAIN_H
 
 void _putchar(char c);
-void _puts(char *str);  // Add other prototypes as needed
+void _puts(char *str);
 
 #endif /* MAIN_H */
