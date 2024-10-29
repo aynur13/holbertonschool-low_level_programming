@@ -1,24 +1,28 @@
-#include <stdio.h>
 #include "main.h"
 /**
-* more_numbers - check the code 
+* more_numbers - checks
 *
-* Return: 0
+* Return: 1 if upper, otherwise 0
 */
+
 void more_numbers(void)
 {
-	int n, a;
+	int a = 0;
+	int b = 0;
 
-	for (n = 0; n < 10; n++)
+	while (a < 10)
 	{
-		for (a = 0; a <= 14; a++)
+		while (b < 15)
 		{
-			if (a >= 10)
+			if (b > 9)
 			{
-				_putchar(a / 10 + '0');
+				_putchar(1 + '0');
 			}
-			_putchar(a % 10 + '0');
+			_putchar(b % 10 + '0');
+			b++;
 		}
-		_putchar('\n');
+	b = 0;
+	_putchar('\n');
+	a++;
 	}
 }
