@@ -1,7 +1,8 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
-* print_most_numbers - A function that prints the numbers 0 to 9.
+* print_most_numbers - check the code.
 *
 * Return: 0
 */
@@ -16,5 +17,5 @@ void print_most_numbers(void)
 			_putchar(i + '0');
 		}
 	}
-	_putchar('\n');	
+	_putchar('\n');
 }
