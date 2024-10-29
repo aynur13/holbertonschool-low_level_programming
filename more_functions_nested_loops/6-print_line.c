@@ -1,17 +1,15 @@
 #include "main.h"
 
 /**
-* print_line - checks
-* @n: times
-*
-* Return: 1 if upper, otherwise 0
+*  print_line - check the code.
+*  @n: variable
+*  Return: 0
 */
-
 void print_line(int n)
 {
-	int j;
+	int i;
 
-	for (j = 0; j < n; j++)
+	for (i = 0; i < n; i++)
 	{
 		_putchar('_');
 	}
