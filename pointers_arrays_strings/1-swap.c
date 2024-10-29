@@ -2,11 +2,14 @@
 #include <stdio.h>
 
 /**
-* reset_to_98 - check the code.
-* @n: pointer
+* swap_int - check the code.
+* @a: pointer
+* @b: pointer
 * Return: Always 0.
 */
-void reset_to_98(int *n)
+void swap_int(int *a, int *b)
 {
-	*n = 98;
+	int c = *a;
+	*a = *b;
+	*b = c;
 }
