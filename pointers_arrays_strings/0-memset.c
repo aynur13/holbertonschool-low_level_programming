@@ -2,31 +2,23 @@
 #include <stdio.h>
 
 /**
-* _memset-fills
-* 
-* @s:area
-* @b:byte
+* _memset - fills memory
 *
-* 
+* @s: area
+* @b: byte
+* @n: counter
+*
 * Return: char
 */
 
-char *_memset(char *s, char b, unsigned int n);
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i = 0;
-	while (i < size)
+
+	while (i < n)
 	{
-		if (i % 10)
-		{
-                        printf(" ");
-                }
-                if (!(i % 10) && i)
-                {
-                        printf("\n");
-                }
-                printf("0x%02x", buffer[i]);
+		*(s + i) = b;
 		i++;
 	}
-
-	printf("\n");
+	return (s);
 }
